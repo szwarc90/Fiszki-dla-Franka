@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiszki dla Franka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+            <h1>Fiszki</h1>
+            </div>
+                <button onclick="showCreateCardBox()">Nowa Karta</button>
+                <button onclick="delFlashcards()">Usuń karty</button>
+            </div>
+    </header>
+    <div class="container">
+        <div class="create-box">
+            <h2 style= "text-align: center; color: black">Stwórz Kartę</h2>
+            <br>
+            <label for="question">Słówko po polsku</label>
+            <textarea id="question"></textarea>
+            <br>
+            <label for="answer">Tłumaczenie</label>
+            <textarea id="answer"></textarea>
+            <div id="actionButtons">
+                <button onclick="addFlashcard()">Dodaj Kartę</button>
+                <button onclick="hideCreateBox()">Schowaj boxa</button>
+            </div>
+    </div>
+</div>
+<h2 style="text-align:center;"> Karty od Fiszek</h2>
+        <div class="flashcards-container">
+            
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

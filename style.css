@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+  }
+  
+  body{
+    font-size: 1rem;
+    background-color: whitesmoke;
+  }
+  header{
+    background-color:aquamarine;
+  }
+  
+  button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background-color: white;
+  }
+  button:hover{
+    background-color:black(0, 0, 0, 0.1);
+  }
+  
+  .container{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    background-color:yellow;
+  }
+  .create-box{
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(215, 250, 249);
+    box-shadow: 2px 4px 0 rgb(222, 135, 139);
+  }
+  .create-box textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(245, 245, 245);
+  
+  }
+  .create-box button{
+    width: fit-content;
+  }
+  .flashcards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flashcard{
+    background-color: aqua;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .flashcard-hide-answer > p {
+    opacity: 0;
+  }
+  
+  .flashcard-show-answer > p {
+    opacity: 1;
+  }
+  
+  .flashcard h2{
+    font-size: 1rem;
+  }
+  
+  .flascard-remove-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 0;
+  }
+  
+  .flascard-remove-button:hover {
+    background-color: brown;
+  }
+  
+  #actionButtons {
+    margin-top: 10px;
+  }
